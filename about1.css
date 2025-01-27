@@ -1,0 +1,907 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+}
+
+.btn{
+    border-radius: 50px;
+    padding: 20px 100px 20px 50px;
+    background:#FB5607;
+    color: #f9f9f9;
+    border: none;
+}
+.arrow{
+    width: 20px;
+    color:#f9f9f9
+}
+
+a{
+    text-decoration: none;
+}
+
+/* En-tête */
+header {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    color: #0B2238;
+}
+
+header .logo {
+   
+    display: flex;
+    transform: translateX(90%);
+}
+header .logo h1{
+    font-size: 30px;
+    font-weight: bold;
+  transform: translateY(35%);
+   
+    
+
+}
+
+header .logo img{
+   width: 70px;
+   height: 70px;
+}
+header .btn{
+    padding: 20px 50px 20px 30px;
+}
+
+.search-bar {
+    position: relative; 
+    display: inline-block; 
+    margin-right: 20px; 
+    transform: translateX(10%);
+}
+
+.search-bar input {
+    
+    border: 1px solid #e9e7e7; 
+    font-size: 16px; 
+    width: 350px; 
+}
+
+.search-icon {
+    position: absolute; 
+    left: 340px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    width: 20px; 
+    height: 20px;
+    cursor: pointer; 
+}
+
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    color: #0B2238;
+    transform: translateY(0%);
+    transform: translateX(20%);
+}
+ 
+header nav ul li {
+    
+    margin-left: 70px;
+    color: #0B2238;
+    font-size:30px;
+    font-family: "sans serif";
+}
+
+
+header nav ul li a {
+    color: #0B2238;
+    text-decoration: none;
+}
+header nav ul li a #home{
+    color:#FB5607;
+}
+header nav ul li a:hover {
+    color: #FB5607;
+
+}
+header nav ul li a:active {
+    color: #fb5607;
+
+}
+
+header .search-bar input {
+    padding: 5px;
+   
+    transform: translateX(10%);
+    border-radius: 50px;
+    padding: 15px 60px 15px 15px; /* Espace interne pour le texte et l'icône */
+}
+header .btn{
+    transform: translateX(100%); 
+    width: 200px;
+    font-size: 15px;
+    background-color: #FB5607;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+
+}header .btn a {
+   color:white;
+    
+}
+.btn {
+    display: inline-block;
+    background-color: #FB5607;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    text-decoration: none; 
+    text-align: center;
+    cursor: pointer;
+  
+    transition: background-color 0.3s ease;
+  }
+  
+ 
+  .btn:active {
+    background-color: white;
+  }
+  
+header .btn:hover{
+ 
+    width: 200px;
+    font-size: 15px;
+    background-color: #0B2238;
+
+   
+    
+} 
+header .btn:active {
+    background-color:white;
+    color:#0B2238;
+    border-color: #FB5607;
+    
+}
+header .moon{
+    width: 5%; /* Largeur de la lune */
+    height: 50px; /* Hauteur de la lune */
+    padding: 20px;
+   
+    transform: translateY(-10%);
+   right: 500px;
+ 
+    
+}
+
+/* Sections communes */
+section {
+    padding: 100px 50px;
+  
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+section h3 {
+    font-size: 20px;
+   text-align: left;
+    color: #3a86ff;
+    bottom:200px;
+}
+
+section p {
+    font-size: 20px; 
+    padding-bottom: 30px;
+   
+}
+
+
+.our-story {
+    display: flex;
+    background-color: #f7f7f7;
+}
+.our-story .title-ourStory{
+    flex: 1;
+    padding: 0px;
+    text-align: left;
+    margin: 00px 0px 0px 150px;
+   
+   
+}
+.our-story .title-ourStory h2{
+   font-size: 50px;
+   font-weight: bold;
+   color: #0B2238;
+  
+  
+}
+.our-story .text-ourStory{
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    font-size: 30px;
+    padding-bottom: 30px;
+    margin: 50px 50px 0px 0px;
+    color: #878b8f;
+}
+
+
+.leadership {
+    background-color: #ffffff;
+    display: flex;
+}
+
+.leadership .text-leadership{
+    flex: 1;
+    padding: 10px;
+    text-align: left;
+    margin: 0px 30px 200px -200px;
+}
+
+.leadership .text-leadership h3{
+    font-size:20px;
+    text-align: left;
+}
+
+
+.leadership .text-leadership h2{
+    font-size:40px;
+    text-align: left;
+    color:#0B2238;
+}
+
+
+.leadership .text-leadership p{
+    font-size:20px;
+    text-align: left;
+    color:#878b8f;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    font-family: "sans serif";
+}
+.leadership .image-leadership{
+    flex: 1;
+    padding: 0px;
+    margin-left: 10%;
+    margin-top: 100px;
+  
+}
+
+.leadership .image-leadership img {
+    width: 70%;
+}
+
+.leadership .btn-more{
+    margin-top: 150px;
+}
+.leadership .btn {
+    position: relative;
+    padding: 20px 100px 20px 40px;
+    
+}
+.leadership .arrow {
+ 
+    width: 20px;
+    transform: translateX(-350%);
+    top: 5px;
+   position:relative;
+    color:#f9f9f9;
+}
+
+/* Section WHY CHOOSE US */
+.why-choose-us{
+    background-color: #f7f7f7;
+   
+}
+.why-choose-us h2{
+    font-size: 40px;
+    color: #0B2238;
+    text-align: center;
+    padding-bottom: 50px;
+}.why-choose-us h3{
+    font-size: 20px;
+    color:#3a86ff;
+    text-align: center;padding-bottom: 20px;
+}
+.why-choose-us .services {
+    display: flex;
+    justify-content: space-around;
+ 
+    margin-top: 50px;
+}
+.why-choose-us .icon1{
+    border-radius: 50px;
+    background-color:#b2c6e6;
+    padding:15px;
+}
+
+.why-choose-us .icon2{
+    border-radius: 50px;
+    background-color:#edb6b9;
+    
+    padding:15px;
+}.why-choose-us .icon3{
+    border-radius: 50px;
+    background-color:#9ff6a3;
+    
+    padding:15px;
+}
+
+
+
+
+.why-choose-us .service {
+    display:flex;
+    width: 50%;
+    padding: 40px  40px ;
+    background-color: #fff;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin: 10px 100px 100px 170px;
+}
+
+.why-choose-us .service img {
+    max-width: 100px;
+    height: 70px;
+    border-radius:20px solid red;
+    
+    align-self: center;
+    margin: -10px;
+    transform: translateY(-30%);
+}
+
+
+
+
+.service:hover {
+    transform: scale(1.1); /* Légère mise en avant au survol */
+    box-shadow: 0 8px 20px #0B2238;
+}
+.service .text {
+    display: flex;
+    flex-direction: column; /* Organise les textes en colonne */
+    justify-content: flex-end; /* Centre verticalement */
+}
+
+.service .text h2 {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+ 
+    color:#0B2238;
+   
+}
+.service .text .p1{
+margin-left: 50px;
+margin-top:20px;
+}
+
+
+.services .text .p2{
+    margin-left: -20px;
+    margin-top:30px;
+    }
+.services .text p {
+   
+    font-family: "sans-serif", serif;
+    color: #878b8f;
+   
+    font-size: 20px;
+    font-family: "sans serif", serif;
+    margin-left: 70px;
+}
+
+/* Section LEADING TEAM */
+.leading-team{
+    background-color: #ffffff;
+    padding: 100px;
+    margin-bottom: 50px;
+}
+.leading-team  h2{
+    text-align: center;
+    font-size: 50px;
+    color:#0B2238;
+    padding-bottom: 70px;
+}
+.leading-team  h3{
+    text-align: center;
+    font-size: 20px;
+    color:#3a86ff;
+    padding-bottom: 15px;
+}
+.leading-team .team-members {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding : 40px 0px 0px 40px;
+}
+
+.leading-team .member {
+    width: 18%;
+    padding: 0px;
+    background-color: #dfe8f7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.leading-team .member img {
+    width: 100%;
+  
+   
+}
+
+
+.leading-team  h4 {
+   color:#0B2238;
+   font-size: 25px;
+   margin-left: 30px;
+   font-family: "Poppins", sans-serif;
+   font-style: 5em;
+  
+
+   
+}
+.leading-team p {
+   color:#0B2238;
+   font-size: 20px;
+   margin-left: 30px;
+   font-family: "sans serif";
+   padding-bottom: 20px;
+  
+   
+   
+}
+.leading-team .member .icons {
+    display: flex;
+    transform:translate(70%,-70%);
+}
+.leading-team .member .icons .icon {
+    margin-right:15px;
+}
+.leading-team .member .icons img{
+    width: 10%;
+}
+
+/* Section Become A Real Estate Agent  #040420
+.become-agent {
+    background-color: #0B2238;
+    color: #fff;
+    padding: 70px  0px 50px 120px;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #242425;
+}
+
+.become-agent .text {
+    flex: 2;
+    font-size: 100px;
+    text-align: left;
+    padding: 70px 0 10px 100px;
+}
+
+.become-agent .btn-join {
+    flex: 1;
+   
+    padding: 100px 20px;
+    margin-left: 1000px;
+}
+
+.become-agent .arrow{
+    transform: translateX(-250%);
+}
+
+
+.footer {
+    display: flex;
+    text-align: center;
+    padding: 50px 100px 50px 180px;
+    background-color: #0B2238;
+    color: #fff;
+    border-bottom: 1px solid #040420;
+}
+
+
+.contact-us {
+    flex:1;
+    text-align: left;
+}
+.contact-us p{
+    text-align: left;
+    padding: 10px 0px 8px 0px;
+}
+.contact-us .social-media{
+    display: flex;
+    display: inline-flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; 
+    border-radius: 50%;
+    padding: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    width: 100px;
+    height: 100px; 
+}
+.contact-us .social-media .icon{
+    width: 10%;
+    margin-right: 20px;
+}
+
+
+.popular-searches{
+    flex: 1;
+    text-align: left;
+    padding: -2px 0px 0px 0px;
+   
+}
+.popular-searches ul {
+    list-style: none;
+    
+}
+
+.popular-searches ul li {
+    padding: 15px 0px 15px 0px;
+    font-family: "sans serif";
+}
+
+
+.quick-links{
+    flex: 1;
+    text-align: left;
+    margin-left: -50p;
+}
+.quick-links ul {
+    list-style: none;
+}
+
+.quick-links ul li {
+    padding: 15px 0px 15px 0px;
+    
+}
+.quick-links ul li a{
+    color: #fff;   
+}
+
+
+.newsletter{
+    flex: 1;
+    margin-left: -50px;
+    text-align: left;
+    
+}
+.newsletter p{
+    text-align: left;
+    padding: 15px 0px 15px 0px;
+    font-family: "sans serif";
+}
+.newsletter input {
+    position: relative;
+    padding: 20px 150px 20px 20px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.newsletter img{
+    position:absolute;
+    width: 2%;
+    background-color: #ff5100;
+    border-radius: 25px;
+    padding: 5px;
+    margin-top: 10px;
+    transform: translateX(-150%);
+}
+footer p{
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+    background-color:#0B2238;
+    color: #fff;
+}
+footer p span{
+    color: #ff5100;
+}*/
+
+/* Section Become A Real Estate Agent */
+.become-agent {
+    background-color: #0B2238;
+    color: #fff;
+    padding: 100px 20px 50px 100px;
+    display: flex;
+  
+}
+
+
+.become-agent .text {
+    flex: 1;
+    text-align: left;
+    padding: 20px 0 20px 120px;
+    padding-bottom: 20px;
+}
+
+.become-agent .btn-join {
+    flex: 1;
+ 
+    transform: translateX(68%);
+    padding: 50px 20px;
+    
+}.become-agent .btn{
+    width: 200px;
+    height: 50px;
+    
+}
+
+.become-agent .arrow{
+    margin-left: 20px;
+    transform: translateX(0%);
+    transform: translateY(20%);
+}
+
+/* Pied de page */
+.footer {
+    display: flex;
+    text-align: center;
+    padding: 50px 100px 50px 170px;
+    background-color:#0B2238;
+    color: #fff;
+    
+    border-bottom: 1px solid #181826;
+}
+
+/* Section CONTACT US */
+.contact-us {
+    flex:1;
+    text-align: left;
+}
+.contact-us p{
+    text-align: left;
+    padding: 10px 0px 15px 0px;
+    font-family: "sans serif";
+}
+.contact-us .social-media{
+    display: flex;
+    
+}
+.contact-us .social-media .icon{
+    width: 15%;
+    margin-right: 30px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 50px;
+    margin-top: 5px;
+ 
+   
+    
+  
+   
+}
+/* Section POPULAR SEARCHES */
+
+.popular-searches{
+    flex: 1;
+    text-align: left;
+}
+.popular-searches ul {
+    list-style: none;
+    
+}
+
+.popular-searches ul li {
+    padding: 15px 0px 25px 0px;
+    font-family: "sans serif";
+    font-size: 25px;
+}
+
+/* Section QUICK LINKS */
+.quick-links{
+    flex: 1;
+    text-align: left;
+}
+.quick-links ul {
+    list-style: none;
+}
+
+.quick-links ul li {
+    padding: 15px 0px 25px 0px;
+    font-family: "sans serif";
+    font-size: 25px;
+    
+}
+.quick-links ul li a{
+    color: #fff;   
+}
+
+/* Section NEWSLETTER */
+.newsletter{
+    flex: 1;
+    text-align: left;
+}
+.newsletter p{
+    text-align: left;
+    padding: 15px 10px 25px 0px;
+}
+.newsletter input {
+    position: relative;
+    padding: 20px 150px 20px 70px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-family: "sans serif";
+    font-size: 20px;
+}
+
+.newsletter img{
+    position:absolute;
+    width: 2%;
+    background-color: #FB5607;
+    border-radius: 25px;
+    padding: 10px;
+    margin-top: 5px;
+    transform: translateX(-150%);
+}
+footer p{
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+    background-color:#0B2238;
+    color: #fff;
+    font-family: "sans serif";
+    font-size: 25px;
+}
+footer p span{
+    color: #FB5607;
+   
+}
+
+
+
+/* Largeur maximale de 1024px (tablettes) */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column; /* Empile les éléments dans le header */
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    header .logo {
+        transform: translateX(0); /* Recentre le logo */
+        margin-bottom: 10px;
+    }
+
+    header .search-bar {
+        width: 90%; /* Barre de recherche plus large */
+        margin-bottom: 15px;
+        transform: translateX(0);
+    }
+
+    header nav ul {
+        flex-direction: column; /* Affiche les liens en colonne */
+        gap: 10px; /* Espace entre les liens */
+    }
+
+   
+.he.why-choose-us .services {
+        flex-direction: column; /* Services en colonne */
+        gap: 20px;
+    }
+
+    .why-choose-us .service {
+        width: 90%; /* Services prennent toute la largeur */
+        margin: 0 auto; /* Centre les services */
+    }
+
+    .leading-team .team-members {
+        flex-wrap: wrap; /* Les cartes s'ajustent en grille */
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .leading-team .member {
+        width: 45%; /* Réduit la largeur des cartes */
+    }
+
+    .become-agent {
+        flex-direction: column; /* Empile les éléments */
+        align-items: center;
+        padding: 20px;
+    }
+
+    footer {
+        flex-wrap: wrap; /* Empile les sections dans le footer */
+        text-align: center;
+    }
+
+    footer > * {
+        width: 100%; /* Chaque section prend toute la largeur */
+        margin-bottom: 20px;
+    }
+}
+
+/* Largeur maximale de 768px (mobiles larges et tablettes en portrait) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    header .logo img {
+        width: 50px; /* Réduit la taille du logo */
+        height: 50px;
+    }
+
+    header nav ul {
+        flex-direction: column; /* Menu vertical */
+        align-items: center;
+    }
+
+    header .search-bar {
+        width: 100%; /* Barre de recherche pleine largeur */
+        margin-bottom: 15px;
+    }
+
+    .why-choose-us .service {
+        width: 100%; /* Services prennent toute la largeur */
+        margin: 0 auto; /* Centre les services */
+        padding: 15px;
+    }
+
+    .leading-team .member {
+        width: 100%; /* Une carte par ligne */
+    }
+
+    .become-agent {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .become-agent .btn-join {
+        margin: 20px 0;
+        width: 100%; /* Bouton pleine largeur */
+    }
+
+    footer p {
+        font-size: 14px; /* Réduit la taille du texte du footer */
+    }
+}
+
+/* Largeur maximale de 480px (petits mobiles) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Taille globale plus petite */
+    }
+
+    header .search-bar input {
+        font-size: 12px;
+        padding: 10px; /* Réduit le padding interne */
+    }
+
+    .why-choose-us h2 {
+        font-size: 24px; /* Titre réduit */
+    }
+
+    .leading-team .member {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    footer {
+        padding: 10px;
+        text-align: center;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
